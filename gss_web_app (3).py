@@ -36,7 +36,7 @@ def calculate_gss(df):
     df['GSS'] = 100 * (
         weights['perennial_grass_norm'] * df['perennial_grass_norm'] +
         weights['available_biomass_norm'] * df['available_biomass_norm'] +
-        weights['shrub_percent_norm'] * (1 - df['shrub_percent_norm']) +
+        weights['Shrub %_norm'] * (1 - df['Shrub %_norm']) +
         weights['grazing_pressure_norm'] * (1 - df['grazing_pressure_norm']) +
         weights['bare_ground_norm'] * (1 - df['bare_ground_norm'])
     )

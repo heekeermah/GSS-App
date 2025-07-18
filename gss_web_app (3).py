@@ -44,8 +44,8 @@ def calculate_gss(df):
 
 # ------------------- AI Assistant -------------------
 def ai_assistant_gpt(row, api_key):
-  api_key = st.secrets["openai"]["api_key"]
-  openai.api_key = api_key
+    api_key = st.secrets["openai"]["api_key"]
+    openai.api_key = api_key
 
     prompt = (
         f"Plot: {row['Plot Name']}, GSS: {row['GSS']:.2f}, Grazing Pressure: {row['grazing_pressure']}, "

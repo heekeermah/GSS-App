@@ -68,6 +68,7 @@ def ai_assistant_gpt(row, api_key):
     except Exception as e:
         return f"AI error: {str(e)}"
 
+
 # ------------------- File Uploader -------------------
 def load_data(uploaded_file):
     if uploaded_file.name.endswith('.csv'):

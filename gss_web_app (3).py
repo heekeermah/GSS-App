@@ -86,7 +86,7 @@ def get_table_download_link(df):
 
 # ------------------- Streamlit Web App -------------------
 st.set_page_config(page_title="Grazing Suitability Score Dashboard", layout="wide")
-st.title("\ud83c\udf3e Grazing Suitability Score (GSS) Calculator")
+st.title("Grazing Suitability Score (GSS) Calculator")
 
 st.sidebar.header("Upload Your Data")
 uploaded_file = st.sidebar.file_uploader("Choose a CSV or Excel file", type=["csv", "xlsx"])
